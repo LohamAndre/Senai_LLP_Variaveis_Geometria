@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class AreaPiramide {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Lado da base: ");
+        double lado = sc.nextDouble();
+
+        System.out.print("Apótema: ");
+        double apotema = sc.nextDouble();
+
+        double areaBase = lado * lado;
+        double areaLateral = 2 * lado * apotema;
+
+        double areaTotal = areaBase + areaLateral;
+
+        System.out.println("Área da Pirâmide = " + areaTotal);
+
+        sc.close();
+    }
+}
