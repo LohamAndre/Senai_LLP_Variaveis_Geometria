@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class AreaCaixa {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Comprimento: ");
+        double c = sc.nextDouble();
+
+        System.out.print("Largura: ");
+        double l = sc.nextDouble();
+
+        System.out.print("Altura: ");
+        double a = sc.nextDouble();
+
+        double area = 2 * ((c * l) + (c * a) + (l * a));
+
+        System.out.println("Área da Caixa = " + area);
+
+        sc.close();
+    }
+}
